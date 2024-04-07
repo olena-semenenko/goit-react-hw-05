@@ -1,0 +1,29 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+li img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+li h3 {
+  margin: 0;
+}
+
+.movie-details {
+  flex-grow: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: blue;
+}

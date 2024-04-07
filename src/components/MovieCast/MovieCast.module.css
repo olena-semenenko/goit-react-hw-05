@@ -1,0 +1,25 @@
+.cast_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cast_list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cast_list li img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.cast_list li h3 {
+  margin: 0 0 5px 0;
+}
+
+/* .cast_list li p {
+  margin: 0; 
+} */
