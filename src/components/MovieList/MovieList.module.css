@@ -1,22 +1,19 @@
-ul {
+.list {
   list-style-type: none;
-  padding: 0;
+  display: block;
+  padding: 20px;
 }
 
-li {
+.card {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-li img {
+.card img {
   width: 150px;
   height: auto;
   margin-right: 20px;
-}
-
-li h3 {
-  margin: 0;
 }
 
 .movie-details {

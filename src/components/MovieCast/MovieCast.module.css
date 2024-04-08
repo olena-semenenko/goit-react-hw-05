@@ -1,25 +1,21 @@
 .cast_list {
   list-style-type: none;
-  padding: 0;
+  padding: 20px;
 }
 
-.cast_list li {
+.cast_item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.cast_list li img {
+.cast_item img {
   width: 100px;
   height: auto;
   margin-right: 20px;
   border-radius: 50%;
 }
 
-.cast_list li h3 {
+.cast_title {
   margin: 0 0 5px 0;
 }
-
-/* .cast_list li p {
-  margin: 0; 
-} */

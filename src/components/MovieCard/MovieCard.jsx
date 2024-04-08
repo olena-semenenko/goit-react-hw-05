@@ -21,23 +21,23 @@ const MovieCard = ({ movie }) => {
         alt={movie.title}
         className={css.poster}
       />
-      <p className={css.description}>
+      <p className={css.subtitle}>
         Decription:<span>{movie.overview}</span>
       </p>
-      <p className={css.releaseDate}>
+      <p className={css.subtitle}>
         Realease date:<span>{normalizeDate(movie.release_date)}</span>
       </p>
-      <p className={css.voteAverage}>
+      <p className={css.subtitle}>
         Vote average:<span>{movie.vote_average}</span>
       </p>
 
-      <p className={css.popularity}>
+      <p className={css.subtitle}>
         Popularity:<span>{movie.popularity}</span>
       </p>
-      <p className={css.status}>
+      <p className={css.subtitle}>
         Status:<span>{movie.status}</span>
       </p>
-      <p className={css.genres}>
+      <p className={css.subtitle}>
         Genres:<span>{movie.genres.map(genre => genre.name).join(', ')}</span>
       </p>
     </div>

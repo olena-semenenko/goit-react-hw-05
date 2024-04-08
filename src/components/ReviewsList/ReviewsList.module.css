@@ -1,0 +1,27 @@
+.review_list {
+  list-style-type: none;
+}
+
+.review_list_item {
+  margin-bottom: 20px;
+}
+
+.review_list_author {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.review_list li p {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.review_list_link {
+  margin-top: 5px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.review_list_link:hover {
+  text-decoration: underline;
+}

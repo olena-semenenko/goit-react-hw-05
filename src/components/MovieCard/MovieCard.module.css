@@ -14,21 +14,11 @@
   margin-bottom: 10px;
 }
 
-.description,
-.releaseDate,
-.voteAverage,
-.popularity,
-.status,
-.genres {
+.subtitle {
   margin-bottom: 10px;
 }
 
-.description span,
-.releaseDate span,
-.voteAverage span,
-.popularity span,
-.status span,
-.genres span {
+.subtitle span {
   font-weight: bold;
   margin-left: 5px;
 }

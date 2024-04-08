@@ -11,7 +11,7 @@ const HomePage = () => {
     (async () => {
       const data = await fetchTrendingMovies();
 
-      setMovies(data.results);
+      setMovies(data);
     })();
   }, []);
 
@@ -31,7 +31,7 @@ const HomePage = () => {
           </NavLink>
         </nav>
       </header>
-      <div>{movies && <MovieList movies={movies} />}</div>
+      <div>{movies && <MovieList movies={movies.results} />}</div>
     </>
   );
 };
