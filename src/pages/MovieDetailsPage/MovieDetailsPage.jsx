@@ -1,8 +1,8 @@
-import css from './MovieDetailsPage.module.css';
 import { Link, useParams, useLocation, Outlet } from 'react-router-dom';
 import { fetchMovieById } from '../../service/api';
 import { useEffect, useRef, useState } from 'react';
 import MovieCard from '../../components/MovieCard/MovieCard';
+import css from './MovieDetailsPage.module.css';
 
 const MovieDetailsPage = () => {
   const [movie, setMovie] = useState(null);
@@ -38,7 +38,7 @@ const MovieDetailsPage = () => {
           </Link>
         </li>
       </ul>
-      <Outlet></Outlet>
+      <Outlet />
     </div>
   );
 };

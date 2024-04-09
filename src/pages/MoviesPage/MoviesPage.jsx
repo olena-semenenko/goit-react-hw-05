@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
-import SearchForm from '../../components/SearchForm/SearchForm';
-import css from './MoviesPage.module.css';
-import { NavLink, useSearchParams } from 'react-router-dom';
-import clsx from 'clsx';
+import { useSearchParams } from 'react-router-dom';
 import { fetchMovieBySearch } from '../../service/api';
+import SearchForm from '../../components/SearchForm/SearchForm';
 import MovieList from '../../components/MovieList/MovieList';
+import Navigation from '../../components/Navigation/Navigation';
+import css from './MoviesPage.module.css';
 
 const MoviesPage = () => {
-  // const [query, setQuery] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query');
+
   const [movies, setMovies] = useState(null);
   useEffect(() => {
     if (!query) return;
@@ -25,22 +25,10 @@ const MoviesPage = () => {
       query: value.searchValue.toLowerCase().trim(),
     });
   };
-  const activePage = ({ isActive }) => {
-    return clsx(css.link, isActive && css.active);
-  };
 
   return (
     <div>
-      <header>
-        <nav>
-          <NavLink to="/" className={activePage}>
-            Home
-          </NavLink>
-          <NavLink to="/movies" className={activePage}>
-            Movies
-          </NavLink>
-        </nav>
-      </header>
+      <Navigation />
       <SearchForm onSubmit={onSubmit} />
       <div>{movies && <MovieList movies={movies.results} />}</div>
       <div>

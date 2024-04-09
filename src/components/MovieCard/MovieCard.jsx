@@ -1,6 +1,5 @@
-import { Link, useLocation } from 'react-router-dom';
 import css from './MovieCard.module.css';
-import { useRef } from 'react';
+
 const MovieCard = ({ movie }) => {
   function normalizeDate(dateString) {
     const dateParts = dateString.split('-');

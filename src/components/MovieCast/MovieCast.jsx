@@ -1,8 +1,8 @@
-import css from './MovieCast.module.css';
 import { useParams } from 'react-router-dom';
 import { fetchMovieDetailsById } from '../../service/api';
 import { useEffect, useState } from 'react';
 import defaultImage from '/src/images/default.jpg';
+import css from './MovieCast.module.css';
 
 const MovieCast = () => {
   const [cast, setCast] = useState(null);
